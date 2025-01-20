@@ -141,7 +141,7 @@ void initSnake() { //初始化蛇身體
     
     for(i = 1; i <= 2; i++) {
         head = (snake*)malloc(sizeof(snake));
-        head->next = tail; //蛇頭的下一個位置
+        head->next = tail; //蛇頭的下一個節點會變成蛇尾
         head->x = 24 + 2 * i;
         head->y = 10;
         tail = head; //蛇頭變蛇尾 
